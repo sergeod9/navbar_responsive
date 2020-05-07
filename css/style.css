@@ -1,0 +1,147 @@
+html {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-size: 10px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+.dropdown-triangle {
+  margin-left: .6rem;
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid white; }
+
+.nav {
+  background-color: #23ccff;
+  position: relative;
+  width: 100%;
+  z-index: 5; }
+  .nav-brand {
+    display: inline-block;
+    color: #fcfff5;
+    padding: 2rem;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    transition: all .2s ease-in-out; }
+    .nav-brand:hover {
+      transform: translateX(5%) scale(1.1);
+      text-shadow: -2px 3px 3px rgba(0, 0, 0, 0.2); }
+  .nav .menu {
+    position: relative;
+    display: inline-block; }
+    .nav .menu-item:first-child {
+      margin-left: 3rem; }
+    .nav .menu-item {
+      font-size: 1.6rem;
+      position: relative;
+      padding: .8rem;
+      margin-top: 1.6rem;
+      margin-left: 1rem;
+      display: inline-block;
+      border: 1px #23ccff solid;
+      border-radius: 2px;
+      transition: all .1s ease-in-out; }
+      .nav .menu-item:hover {
+        transform: translateY(-3px) scale(1.1);
+        background-color: #0ac6ff;
+        border: 1px #fcfff5 solid;
+        text-shadow: -2px 3px 3px rgba(0, 0, 0, 0.2); }
+      .nav .menu-item:active, .nav .menu-item:link {
+        transform: translateY(-2px) scale(1.1);
+        background-color: #00b8ef; }
+      .nav .menu-item a {
+        text-decoration: none;
+        color: #fcfff5; }
+  .nav .hamburger {
+    display: none;
+    position: absolute;
+    right: 1.6rem;
+    width: 5rem;
+    height: 4.5rem;
+    margin-top: 1.2rem;
+    border: 1px #fcfff5 solid;
+    border-radius: 5%;
+    transition: all .2s ease-in-out; }
+    .nav .hamburger:hover {
+      transform: translateY(-2px) scale(1.1);
+      border: 1px #fcfff5 solid;
+      text-shadow: -2px 3px 3px rgba(0, 0, 0, 0.2); }
+    .nav .hamburger:active, .nav .hamburger:link {
+      transform: translateY(-1px) scale(1.1); }
+    .nav .hamburger .line:first-child {
+      margin-top: .9rem; }
+    .nav .hamburger .line {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      margin-top: .5rem;
+      background-color: white;
+      padding: .2rem;
+      width: 70%;
+      border-bottom: 1px white solid;
+      border-radius: 3px; }
+  .nav .dropdown .dropdown-menu {
+    padding: .2rem;
+    position: absolute;
+    display: none;
+    width: max-content;
+    background-color: #56d8ff;
+    top: 3.3rem;
+    z-index: 6;
+    opacity: .8; }
+    .nav .dropdown .dropdown-menu .dropdown-item {
+      padding: 1rem;
+      text-decoration: none;
+      list-style: none;
+      left: 5px;
+      color: #065235; }
+      .nav .dropdown .dropdown-menu .dropdown-item:not(:last-child) {
+        border-bottom: 1px #00b8ef solid; }
+      .nav .dropdown .dropdown-menu .dropdown-item * {
+        color: white;
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+      .nav .dropdown .dropdown-menu .dropdown-item:hover {
+        background-color: #23ccff; }
+        .nav .dropdown .dropdown-menu .dropdown-item:hover * {
+          color: #fcfff5; }
+
+@media screen and (max-width: 768px) {
+  .nav .nav-brand {
+    display: block;
+    font-size: 2.4rem; }
+  .nav .menu {
+    display: none;
+    width: 80vw;
+    margin: 0 auto;
+    margin-left: 4vw; }
+    .nav .menu-item:first-child {
+      margin-top: 1.4rem;
+      margin-left: inherit; }
+    .nav .menu-item:last-child {
+      margin-bottom: 1rem; }
+    .nav .menu-item {
+      border-width: 0;
+      display: block;
+      margin-top: 1.2rem;
+      width: 100%;
+      margin-left: inherit; }
+      .nav .menu-item:hover {
+        border-width: 0;
+        background-color: inherit;
+        transform: scale(1) translate(0); }
+    .nav .menu a {
+      font-size: 2rem; }
+  .nav .hamburger {
+    display: inline-block;
+    position: absolute;
+    top: .2rem; }
+  .nav .dropdown .dropdown-menu {
+    opacity: 1; } }
