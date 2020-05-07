@@ -7,36 +7,6 @@ let breakPointSmall;
 let toggleHamburger = true;
 let dropdownMenuState = false;
 
-// Get screen sizes break points from json file
-/* That was a bad idea.. canceled, hard coded next..
-
-async function GetSizes(){
-    try{
-        const resp = await fetch("../json/screen-sizes.json");
-        breakPointSmall = await resp.json();
-        breakPointSmall = breakPointSmall.small;
-        console.log(breakPointSmall);
-    }
-    catch(err){
-        console.log(err);
-    }
-}
-// Get the screen sizes break points when document is loaded
-window.onload = GetSizes();
-
-
-if(window.innerWidth > breakPointSmall){
-    dropdownMenuState = true;
-    console.log(dropdownMenuState);
-    console.log("Hello");
-    
-}else{
-    console.log("wtf");
-    console.log(innerWidth);
-    console.log(breakPointSmall);
-}
-*/
-
 breakPointArr = {
     "small":768,
     "medium": 1024,
